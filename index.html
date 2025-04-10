@@ -3,26 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Faruk CESUR GitHub Website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Faruk Cesur | Android Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
   </head>
-
   <body>
-    <h1>Faruk CESUR GitHub Website</h1>
-    <h2>This is a GitHub website where I share my own content.</h2>
-    <hr />
-    <h2>About Me:</h2>
-    <ul>
-      <li><a href="./contact.html">Click to Contact Me</a></li>
-      <li><a href="./resume.html">Click to Check My Resume</a></li>
-    </ul>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <img src="Images/Vesika Foto.jpg" alt="Faruk Cesur" class="profile-pic" />
+          <div class="logo">
+            <a href="#top">Faruk Cesur</a>
+            <span class="subtitle">Android Developer</span>
+          </div>
+        </div>
+        <ul>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h2>Projects I Created During My Learning Process:</h2>
-    <ul>
-      <li><a href="./My Portfolio/First HTML Porfolio Project/index.html">My First HTML Portfolio Project</a></li>
-    </ul>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="content">
+        <h1>About Me</h1>
+        <div class="profile-photo">
+          <img src="images/Vesika Foto.jpg" alt="Faruk's Profile Photo" />
+        </div>
+        <p>I began my career in accounting and HR in 2017, but my passion for technology led me to explore software development. This journey has shaped my desire to create innovative applications that can improve people’s daily lives.</p>
+        <p>I'm currently enrolled in the Computer Programming program at Atatürk University. With a solid understanding of programming languages, frameworks, and development tools, I aim to create high-performance Android apps that offer intuitive user experiences.</p>
+        <p>I have a strong foundation in <b>Kotlin</b>, <b>Android Studio</b>, <b>Jetpack Compose</b>, and <b>Firebase</b>, with a passion for learning and staying up-to-date with the latest trends in mobile development.</p>
+        <p>I believe in building meaningful software that impacts the world positively and looking forward to working on exciting projects.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="content">
+        <h1>Skills</h1>
+        <div class="skills-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin" title="Kotlin" />
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/android-studio-icon.png" alt="Android Studio" title="Android Studio" />
+          <img src="http://bit.ly/42Cpl9F" alt="Jetpack Compose" title="Jetpack Compose" />
+          <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" title="Firebase" />
+          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" title="Git" />
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" title="GitHub" />
+          <img src="https://i.imgur.com/23TWPgG.png" alt="ChatGPT" title="ChatGPT" />
+          <img src="https://i.imgur.com/6tbYI2H.png" alt="HTML-CSS-JS" title="HTML-CSS-JS" />
+          <img src="https://i.ibb.co/fQHDQRp/Background.png" alt="C#" title="C#" />
+          <img src="https://i.ibb.co/qCnfWw9/Background-1.png" alt="Unity" title="Unity" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="content">
+        <h1>Projects</h1>
+        <!-- Example Project Block (Uncomment to add projects) -->
+        <!-- 
+        <div class="project">
+          <h3>Project Title</h3>
+          <p>Description of the project and its features.</p>
+          <a href="#">See More</a>
+        </div> -->
+
+        <article class="project">
+          <img src="Images/calculator.webp" alt="Simple Calculator" class="project-image" />
+          <h3>Simple Calculator</h3>
+          <p>I developed a simple calculator.</p>
+          <a href="https://github.com/faruk-cesur/Android-Development/tree/main/My-Own-Projects/SimpleCalculator">See More</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="content">
+        <h1>Contact Me</h1>
+        <table>
+          <tr>
+            <td class="contact-item">
+              <img src="https://i.ibb.co/wYK4D81/iconfinder-6296671-microsoft-office-office365-outlook-icon-32px.png" width="30" />
+              <a href="mailto:faruk-cesur@hotmail.com">faruk-cesur@hotmail.com</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="contact-item">
+              <img src="https://i.ibb.co/3fHd1cc/linkedin-socialnetwork-17441.png" width="30" />
+              <a href="https://www.linkedin.com/in/faruk-cesur/">LinkedIn: Faruk Cesur</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="contact-item">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" />
+              <a href="https://github.com/faruk-cesur" target="_blank">GitHub: faruk-cesur</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="contact-item">
+              <img src="https://i.ibb.co/LY0rmr5/dc.png" width="30" />
+              <a href="https://discordapp.com/users/740301788015755304/">Discord: farukcesur</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="contact-item">
+              <img src="https://www.freeiconspng.com/uploads/website-icon-18.png" width="30" />
+              <a href="https://faruk-cesur.github.io/" target="_blank">Website: faruk-cesur.github.io</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
     <footer>
-      <hr />
-      <p>Copyright © Faruk CESUR. All Rights Reserved.</p>
+      <p>© 2025 Faruk Cesur | All Rights Reserved</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
