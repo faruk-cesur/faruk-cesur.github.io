@@ -17,10 +17,11 @@ h1,
 h2,
 h3 {
   color: #ffd700;
+  font-size: 1.5rem;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
   text-align: center;
   font-weight: bold;
@@ -46,7 +47,7 @@ nav ul li {
 nav ul li a {
   color: #e0e0e0;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
@@ -77,8 +78,8 @@ nav ul li a.active {
 }
 
 .profile-pic {
-  width: 45px;
-  height: 50px;
+  width: 100%;
+  max-width: 50px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #ffd700;
@@ -90,35 +91,21 @@ nav ul li a.active {
 
 .subtitle {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #ccc;
-  margin-top: 2px;
-  letter-spacing: 1px;
-}
-
-.theme-toggle {
-  background: none;
-  border: none;
-  color: #ffd700;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.theme-toggle:hover {
-  color: #fff;
+  letter-spacing: 1.5px;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #ffd700;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .logo a {
   color: #ffd700;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -157,6 +144,26 @@ nav ul li a.active {
   margin: 20px auto;
   color: #dcdcdc;
   text-align: justify;
+}
+
+/* General styling for the lists */
+.focus-list,
+.belief-list,
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.focus-list li,
+.belief-list li,
+.goal-list li {
+  text-align: left; /* Ensures text within each list item starts from the left */
+  margin-bottom: 10px; /* Adds space between each list item */
 }
 
 /* Skills Section */
@@ -216,7 +223,6 @@ nav ul li a.active {
 
 .project h3 {
   color: #a7ff00;
-  font-size: 1.5rem;
 }
 
 .project p {
