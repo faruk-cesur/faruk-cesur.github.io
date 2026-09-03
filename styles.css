@@ -32,6 +32,10 @@ header {
   background-color: #111;
   padding: 20px 0;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 nav ul {
@@ -71,6 +75,22 @@ nav ul li a.active {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.cv-button {
+  background: #ffd700;
+  color: #111;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.cv-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
 }
 
 .logo a:hover {
@@ -162,8 +182,10 @@ nav ul li a.active {
 .focus-list li,
 .belief-list li,
 .goal-list li {
-  text-align: left; /* Ensures text within each list item starts from the left */
-  margin-bottom: 10px; /* Adds space between each list item */
+  text-align: left;
+  /* Ensures text within each list item starts from the left */
+  margin-bottom: 10px;
+  /* Adds space between each list item */
 }
 
 /* Skills Section */
@@ -191,6 +213,52 @@ nav ul li a.active {
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(255, 215, 0, 0.6);
   cursor: pointer;
+}
+
+/* Süreç & Otomasyon etiketleri */
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
+.tag {
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.tag-primary {
+  background: rgba(255, 215, 0, 0.12);
+  border: 1px solid #ffd700;
+  color: #ffd700;
+}
+
+.secondary-heading {
+  color: #999;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.secondary-skills {
+  opacity: 0.6;
+  margin-top: 15px;
+}
+
+.secondary-skills img {
+  width: 44px;
+  height: 44px;
+}
+
+.section-caption {
+  color: #999;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Projects Section */
@@ -260,6 +328,14 @@ nav ul li a.active {
   border-bottom: 3px solid #ffd700;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .contact-item {
@@ -351,6 +427,10 @@ footer {
   #contact .content {
     height: auto;
     padding: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-item {
